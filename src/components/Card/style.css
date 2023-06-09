@@ -1,0 +1,146 @@
+.card__img__2 {
+    height: 100px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+/*Мобильная версия*/
+
+@media (max-width: 980px) {
+
+.card {
+    padding: 4px;
+    display: grid;
+    gap: 10px;
+    background-color: white;
+    color: #222;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    align-content: space-between;
+    grid-column: span 1;
+}
+
+.card__img {
+    height: 100px;
+    justify-self: center;
+}
+
+.card__btn {
+    border: none;
+    outline: none;
+    height: 30px;
+    background-color: #FFE44D;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card__btn:hover {
+    background-color: #777;
+}
+
+.card__btn:disabled {
+    opacity: .6;
+    cursor: default;
+}
+
+.card__discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: pink;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.card__like {
+    color: crimson;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.card__price {
+    font-size: small;
+    
+}
+
+}
+
+/*Десктоп версия*/
+
+@media (min-width: 981px) {
+    .card {
+        padding: 20px;
+        display: grid;
+        gap: 10px;
+        background-color: white;
+        color: #222;
+        border-radius: 4px;
+        text-align: center;
+        position: relative;
+        align-content: space-between;
+    }
+    
+    .card__img {
+        height: 100px;
+        justify-self: center;
+    }
+    
+    .card__btn {
+        border: none;
+        outline: none;
+        height: 30px;
+        background-color: #FFE44D;
+        color: black;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .card__btn:hover {
+        background-color: #777;
+    }
+
+    .card__btn:disabled {
+        opacity: .6;
+        cursor: default;
+    }
+    
+    .card__discount {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: pink;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .card__like {
+        color: crimson;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .card__name {
+        text-overflow:ellipsis;
+        overflow: hidden;
+    }
+}
